@@ -14,7 +14,7 @@ Users have the options to plot spectra from thier collected x-ray scattering dat
 | Energy Window Width | keV   | The size of the sub-ranges you wish to analyze |
 
 ### 2D Scan 
-Users can map the relative intensity of a scattering peak across multiple data set to generate a planar image.
+Users can map the relative intensity of a scattering peak across multiple data set from 2D scanning experiments to generate a planar image.
 | Parameter        | Units           | Description                                                                                                          |
 |------------------|-----------------|----------------------------------------------------------------------------------------------------------------------|
 | Energy Range     | keV             | Total range of energies you wish to analyze                                                                          |
