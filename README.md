@@ -1,10 +1,10 @@
-# Spectral PCD Analysis
+# Spectral SAXS PCD data Analysis
 
 ## Overview:
-Basic data processing pipeline for spectral small angle x-ray scattering analysis using photon counting detector data.
+Basic data processing pipeline for spectral small angle x-ray scattering analysis (sSAXS) using spectroscopic photon counting detector data.
 This application allows two primary functions:
 
-### Spectral Analysis and Energy Windowing
+### 1D Spectral Analysis and Energy Windowing
 Users have the options to plot spectra from thier collected x-ray scattering data and separate into energy windows of interest.
 
 | Parameter           | Units | Description                                    |
@@ -13,12 +13,12 @@ Users have the options to plot spectra from thier collected x-ray scattering dat
 | Bin Width           | keV   | The size of the steps between energy values    |
 | Energy Window Width | keV   | The size of the sub-ranges you wish to analyze |
 
-### Scan Reconstruction
-Users can map the relative intensity of a spectral peak across multiple data fiels to reconstruct a 2-D raster scan.
+### 2D Scan 
+Users can map the relative intensity of a scattering peak across multiple data set to generate a planar image.
 | Parameter        | Units           | Description                                                                                                          |
 |------------------|-----------------|----------------------------------------------------------------------------------------------------------------------|
 | Energy Range     | keV             | Total range of energies you wish to analyze                                                                          |
-| Integral q Range | nm<sup>-1</sup> | The start and end of the spectral peak of interest                                                                   |
+| Integral q Range | nm<sup>-1</sup> | The start and end of the q-peak of interest                                                                   |
 | Scans Per Row    | pixels          | The width of the final map you wish to create, if this is a 2D scan it is the number of collections you took per row |
 
 
