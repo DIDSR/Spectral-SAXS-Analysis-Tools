@@ -13,8 +13,8 @@ Users have the options to plot spectra from thier collected x-ray scattering dat
 | Bin Width           | keV   | The size of the steps between energy values    |
 | Energy Window Width | keV   | The size of the sub-ranges you wish to analyze |
 
-### 2D Scan 
-Users can map the relative intensity of a scattering peak across multiple data set from 2D scanning experiments to generate a planar image.
+### 2D scanning
+Users can map the relative intensity of a scattering signals across multiple data set from 2D scanning sSAXS experiments to generate a planar image.
 | Parameter        | Units           | Description                                                                                                          |
 |------------------|-----------------|----------------------------------------------------------------------------------------------------------------------|
 | Energy Range     | keV             | Total range of energies you wish to analyze                                                                          |
