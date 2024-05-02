@@ -1,7 +1,21 @@
 # Spectral SAXS PCD data Analysis
+https://github.com/DIDSR/Spectral-SAXS-Analysis-Tools/blob/main/Windowing%20UI.PNG 
+![The User Interface of the Program]((https://github.com/DIDSR/Spectral-SAXS-Analysis-Tools/blob/main/Windowing%20UI.PNG)raw=true)
 
 ## Overview:
 This is an open-access data analysis tool to analyze spectroscopic photon counting detector data for spectral small angle x-ray scattering (sSAXS) application.
+
+### Data Input:
+This application assumes that the input files a 3D array of detector counts at each energy level. In order to work properly the data should be formatted as [energyDetected,xPixel,yPixel]
+
+Each functions requires some experimental parameters as well:
+| Parameter                   | Units           | Description                                                             |
+|-----------------------------|-----------------|-------------------------------------------------------------------------|
+| Sample to Detector Distance | mm              | The distance between the scanned sample and the surface of the detector |
+| q Range                     | nm<sup>-1</sup> | The region of momentum transfer values to analyze across                |
+| Transmission Beam Location  | pixels          | The approximate location where the incident beam strikes the detector   |
+
+
 This application allows two primary functions:
 
 ### 1D Spectral Analysis and Energy Windowing
@@ -13,6 +27,14 @@ Users have the options to plot spectra from thier collected x-ray scattering dat
 | Bin Width           | keV   | The size of the steps between energy values    |
 | Energy Window Width | keV   | The size of the sub-ranges you wish to analyze |
 
+#### Output:
+-Plots of the individual spectra
+-A single plot of the background subtracted spectrum
+-A plot of the angles corresponding to each detector pixel
+-A heatmap of the background subtracted detector data across the whole energy range
+-Heatmaps of the background subtrated detector data in each energy window
+-A 3D plot of the background subtracted spectra in each energy window
+
 ### 2D scanning analysis to generate spatially resolved scattering map
 Users can map the relative intensity of scattering signals across multiple data set from 2D scanning sSAXS experiments to generate a planar image.
 | Parameter        | Units           | Description                                                                                                          |
@@ -21,17 +43,9 @@ Users can map the relative intensity of scattering signals across multiple data 
 | Integral q Range | nm<sup>-1</sup> | The start and end of the q-peak of interest                                                                   |
 | Scans Per Row    | pixels          | The width of the final map you wish to create, if this is a 2D scan it is the number of collections you took per row |
 
-
-Each of these functions requires some experimental parameters as well:
-| Parameter                   | Units           | Description                                                             |
-|-----------------------------|-----------------|-------------------------------------------------------------------------|
-| Sample to Detector Distance | mm              | The distance between the scanned sample and the surface of the detector |
-| q Range                     | nm<sup>-1</sup> | The region of momentum transfer values to analyze across                |
-| Transmission Beam Location  | pixels          | The approximate location where the incident beam strikes the detector   |
-
-
-
-
+#### Output:
+-A 3D plot of the background subtracted spectra for each file
+-A heatmap of each file's intensity at the specified q region of interest
 
 
 ## Installation:
