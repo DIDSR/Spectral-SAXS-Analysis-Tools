@@ -1,7 +1,7 @@
 # Spectral SAXS PCD data Analysis
 
 ## Overview:
-Basic data processing pipeline for spectral small angle x-ray scattering analysis (sSAXS) using spectroscopic photon counting detector data.
+This is an open-access data analysis tool to process spectroscopic photon counting detector data for spectral small angle x-ray scattering (sSAXS) application.
 This application allows two primary functions:
 
 ### 1D Spectral Analysis and Energy Windowing
