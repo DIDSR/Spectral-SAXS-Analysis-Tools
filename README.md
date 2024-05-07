@@ -1,8 +1,8 @@
-# Spectral SAXS PCD data Analysis
+# Spectral SAXS PCD data Analysis Tool
 ![The User Interface of the Program](https://github.com/DIDSR/Spectral-SAXS-Analysis-Tools/blob/main/Windowing%20UI.PNG)
 
 ## Overview:
-This is an open-access data analysis tool to analyze spectroscopic photon counting detector data for spectral small angle x-ray scattering (sSAXS) application.
+This is an open-source data analysis tool to analyze spectroscopic photon counting detector data for spectral small angle x-ray scattering (sSAXS) application.
 
 ### Data Input:
 This application assumes that the input files a 3D array of detector counts at each energy level. In order to work properly the data should be formatted as [energyDetected,xPixel,yPixel]
